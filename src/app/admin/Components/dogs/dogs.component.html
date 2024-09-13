@@ -1,0 +1,12 @@
+<div class="max-container">
+    <textarea [(ngModel)]="textArea1" appWhiteSpace></textarea>
+    <p>Texto ingresado: "{{ textArea1 }}"</p>
+    <div class="container">
+        <div class="btnClass">
+            <button (click)="getNewDogImage()">Nueva imagen</button>
+        </div>
+        <div class="imgClass">
+            <img *ngIf="imgRandom" [src]="imgRandom" alt="Random Dog Image">
+        </div>
+    </div>
+</div>
