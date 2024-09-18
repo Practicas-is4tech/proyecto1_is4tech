@@ -4,7 +4,7 @@ import { DogsComponent } from './Components/dogs/dogs.component';
 import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
-  { path: '', component: DogsComponent }
+  { path: 'dogs', component: DogsComponent }
 ];
 
 @NgModule({

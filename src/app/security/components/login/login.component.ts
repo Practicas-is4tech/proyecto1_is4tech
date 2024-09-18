@@ -1,12 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { CommonModule } from '@angular/common';
 import { SocialAuthService, SocialUser } from '@abacritt/angularx-social-login';
 import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
-  standalone: true,
-  imports: [CommonModule],
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.scss']
 })
@@ -21,7 +18,7 @@ export class LoginComponent implements OnInit {
       this.user = user;
       this.loggedIn = (user != null);
       if (this.loggedIn) {
-        this.router.navigate(['/dogs']);
+        this.router.navigate(['/admin/dogs']);
       }
     });
   }
@@ -30,7 +27,7 @@ export class LoginComponent implements OnInit {
     this.user = user;
     this.loggedIn = true;
     console.log(this.user);
-    this.router.navigate(['/dogs']);
+    this.router.navigate(['/admin/dogs']);
   }
 
   onSignInError(error: any): void {

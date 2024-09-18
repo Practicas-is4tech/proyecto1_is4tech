@@ -2,7 +2,6 @@ import { Directive, ElementRef, HostListener } from '@angular/core';
 
 @Directive({
   selector: '[appWhiteSpace]',
-  standalone: true
 })
 export class WhiteSpaceDirective {
 

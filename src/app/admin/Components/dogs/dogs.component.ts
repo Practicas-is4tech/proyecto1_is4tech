@@ -1,13 +1,10 @@
 import { Component, OnInit } from '@angular/core';
-import { CommonModule } from '@angular/common';
 import { DogsService } from '../../services/dogs-service.service';
 import { FormsModule, NgModel } from '@angular/forms';
 import { WhiteSpaceDirective } from '../../../shared/Directives/white-space.directive';
 
 @Component({
   selector: 'app-dogs',
-  standalone: true,
-  imports: [CommonModule, FormsModule, WhiteSpaceDirective],
   templateUrl: './dogs.component.html',
   styleUrls: ['./dogs.component.scss']
 })

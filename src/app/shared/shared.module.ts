@@ -5,11 +5,11 @@ import { WhiteSpaceDirective } from './Directives/white-space.directive';
 
 
 @NgModule({
-  declarations: [
+  declarations: [WhiteSpaceDirective
   ],
   imports: [
     CommonModule,
-    WhiteSpaceDirective
+
   ],
   exports: [WhiteSpaceDirective]
 })
